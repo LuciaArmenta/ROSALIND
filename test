@@ -1,0 +1,26 @@
+# F=C*1.8+32
+# C=(F-32)/1.8
+print "Convertir: a)de F a C, o b)de C a F"
+opcion= str(raw_input())
+while (opcion!="a" and opcion!="b"):
+	print "Opcion no encontrada. Intenta de nuevo."
+	opcion= str(raw_input())
+
+if (opcion=="a"):
+	print "Convertir de F a C"
+	#print "Temperatura Farenheit:"
+	#F=float(raw_input())
+	F=float(raw_input("Temperatura Farenheit:"))
+	C=(F-32)/1.8
+	print C, "grados Celsius"
+
+if (opcion=="b"):
+	print "Convertir de C a F"
+	#print "Temperatura Celsius:"
+	#C=float(raw_input())
+	C=float(raw_input("Temperatura Celsius:"))
+	F=C*1.8+32
+	print F, "grados Farenheit"
+	
+print " "
+print "===Thanks for playing!==="
